@@ -1,4 +1,4 @@
-# [Light Bootstrap Dashboard PRO React](https://demos.creative-tim.com/light-bootstrap-dashboard-pro-react/#/) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Ftimcreative.github.io%2Flight-bootstrap-dashboard-pro-react&text=Light%20Bootstrap%20Dashboard%20PRO%20React%20-%20Premium%20Bootstrap%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Flight-bootstrap-dashboard-pro-react%2F&via=creativetim&hashtags=react%2Creactbootstrap%2Cbootstrap%2Ccreativetim)
+# [Jamia Management System](https://demos.creative-tim.com/light-bootstrap-dashboard-pro-react/#/) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Ftimcreative.github.io%2Flight-bootstrap-dashboard-pro-react&text=Light%20Bootstrap%20Dashboard%20PRO%20React%20-%20Premium%20Bootstrap%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Flight-bootstrap-dashboard-pro-react%2F&via=creativetim&hashtags=react%2Creactbootstrap%2Cbootstrap%2Ccreativetim)
 
 ![version](https://img.shields.io/badge/version-2.0.1-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-light-bootstrap-dashboard-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-light-bootstrap-dashboard-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-light-bootstrap-dashboard-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-light-bootstrap-dashboard-pro/issues-react?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
@@ -206,14 +206,4 @@ If you have questions or need help integrating the product please [contact us](h
 
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 
-##### Social Media
 
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
