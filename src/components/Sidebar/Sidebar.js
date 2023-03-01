@@ -142,7 +142,7 @@ function Sidebar({ routes, image, background }) {
               className="simple-text logo-normal"
               href="http://www.creative-tim.com"
             >
-              Creative Tim
+              Jamia Univ
             </a>
           </div>
           <div className="user">
@@ -161,10 +161,11 @@ function Sidebar({ routes, image, background }) {
                 aria-expanded={userCollapseState}
               >
                 <span>
-                  Tania Andrew <b className="caret"></b>
+                  Administrator 
+                  {/* <b className="caret"></b> */}
                 </span>
               </a>
-              <Collapse id="collapseExample" in={userCollapseState}>
+              {/* <Collapse id="collapseExample" in={userCollapseState}>
                 <div>
                   <Nav as="ul">
                     <li>
@@ -199,7 +200,7 @@ function Sidebar({ routes, image, background }) {
                     </li>
                   </Nav>
                 </div>
-              </Collapse>
+              </Collapse> */}
             </div>
           </div>
           <Nav as="ul">{createLinks(routes)}</Nav>

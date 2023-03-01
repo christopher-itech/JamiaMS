@@ -106,7 +106,7 @@ function FixedPlugin({
                 </a>
               </li>
             ))}
-            <li className="button-container">
+            {/* <li className="button-container">
               <div>
                 <Button
                   block
@@ -142,10 +142,10 @@ function FixedPlugin({
                   Documentation
                 </Button>
               </div>
-            </li>
-            <li className="header-title" id="sharrreTitle">
+            </li> */}
+            {/* <li className="header-title" id="sharrreTitle">
               Thank you for sharing!
-            </li>
+            </li> */}
             <li className="button-container d-flex justify-content-center">
               <Button className="mr-2" id="twitter" variant="twitter">
                 <i className="fab fa-twitter"></i>

@@ -50,208 +50,390 @@ var routes = [
   {
     collapse: true,
     path: "/components",
-    name: "Components",
-    state: "openComponents",
-    icon: "nc-icon nc-app",
+    name: "Students",
+    state: "openStudents",
+    icon: "nc-icon nc-single-02",
     views: [
       {
-        path: "/buttons",
+        path: "/add_edit_students",
         layout: "/admin",
-        name: "Buttons",
-        mini: "B",
-        component: Buttons
+        name: "Add/Edit Student",
+        mini: "A/E",
+        component: Dashboard
       },
       {
-        path: "/grid-system",
+        path: "/list_students",
         layout: "/admin",
-        name: "Grid System",
-        mini: "GS",
-        component: GridSystem
+        name: "List Students",
+        mini: "LS",
+        component: Dashboard
       },
-      {
-        path: "/panels",
-        layout: "/admin",
-        name: "Panels",
-        mini: "P",
-        component: Panels
-      },
-      {
-        path: "/sweet-alert",
-        layout: "/admin",
-        name: "Sweet Alert",
-        mini: "SA",
-        component: SweetAlert
-      },
-      {
-        path: "/notifications",
-        layout: "/admin",
-        name: "Notifications",
-        mini: "N",
-        component: Notifications
-      },
-      {
-        path: "/icons",
-        layout: "/admin",
-        name: "Icons",
-        mini: "I",
-        component: Icons
-      },
-      {
-        path: "/typography",
-        layout: "/admin",
-        name: "Typography",
-        mini: "T",
-        component: Typography
-      }
+      // {
+      //   path: "/panels",
+      //   layout: "/admin",
+      //   name: "Panels",
+      //   mini: "P",
+      //   component: Panels
+      // },
+      // {
+      //   path: "/sweet-alert",
+      //   layout: "/admin",
+      //   name: "Sweet Alert",
+      //   mini: "SA",
+      //   component: SweetAlert
+      // },
+      // {
+      //   path: "/notifications",
+      //   layout: "/admin",
+      //   name: "Notifications",
+      //   mini: "N",
+      //   component: Notifications
+      // },
+      // {
+      //   path: "/icons",
+      //   layout: "/admin",
+      //   name: "Icons",
+      //   mini: "I",
+      //   component: Icons
+      // },
+      // {
+      //   path: "/typography",
+      //   layout: "/admin",
+      //   name: "Typography",
+      //   mini: "T",
+      //   component: Typography
+      // }
     ]
   },
   {
     collapse: true,
-    path: "/forms",
-    name: "Forms",
-    state: "openForms",
-    icon: "nc-icon nc-notes",
+    path: "/employees",
+    name: "Employees",
+    state: "openEmployees",
+    icon: "nc-icon nc-circle-09",
     views: [
       {
-        path: "/regular-forms",
+        path: "/add_edit_employee",
         layout: "/admin",
-        name: "Regular Forms",
-        mini: "RF",
-        component: RegularForms
+        name: "Add/Edit Employee",
+        mini: "A/E",
+        component: Dashboard
       },
       {
-        path: "/extended-forms",
+        path: "/list_employee",
         layout: "/admin",
-        name: "Extended Forms",
-        mini: "EF",
-        component: ExtendedForms
+        name: "List Employee",
+        mini: "LS",
+        component: Dashboard
       },
-      {
-        path: "/validation-forms",
-        layout: "/admin",
-        name: "Validation Forms",
-        mini: "VF",
-        component: ValidationForms
-      },
-      {
-        path: "/wizard",
-        layout: "/admin",
-        name: "Wizard",
-        mini: "W",
-        component: Wizard
-      }
     ]
-  },
+  },  
   {
     collapse: true,
-    path: "/tables",
-    name: "Tables",
-    state: "openTables",
-    icon: "nc-icon nc-paper-2",
+    path: "/class",
+    name: "Class",
+    state: "openClass",
+    icon: "nc-icon nc-grid-45",
     views: [
       {
-        path: "/regular-tables",
+        path: "/add_edit_class",
         layout: "/admin",
-        name: "Regular Tables",
-        mini: "RT",
-        component: RegularTables
+        name: "Add/Edit Class",
+        mini: "A/E",
+        component: Dashboard
       },
       {
-        path: "/extended-tables",
+        path: "/list_class",
         layout: "/admin",
-        name: "Extended Tables",
-        mini: "ET",
-        component: ExtendedTables
+        name: "List Class",
+        mini: "LS",
+        component: Dashboard
       },
-      {
-        path: "/react-table",
-        layout: "/admin",
-        name: "React Table",
-        mini: "RT",
-        component: ReactTables
-      }
     ]
-  },
+  },  
   {
     collapse: true,
-    path: "/maps",
-    name: "Maps",
-    state: "openMaps",
-    icon: "nc-icon nc-pin-3",
-    views: [
-      {
-        path: "/google-maps",
-        layout: "/admin",
-        name: "Google Maps",
-        mini: "GM",
-        component: GoogleMaps
-      },
-      {
-        path: "/full-screen-maps",
-        layout: "/admin",
-        name: "Full Screen Map",
-        mini: "FSM",
-        component: FullScreenMap
-      },
-      {
-        path: "/vector-maps",
-        layout: "/admin",
-        name: "Vector Map",
-        mini: "VM",
-        component: VectorMap
-      }
-    ]
-  },
-  {
-    path: "/charts",
-    layout: "/admin",
-    name: "Charts",
-    icon: "nc-icon nc-chart-bar-32",
-    component: Charts
-  },
-  {
-    path: "/calendar",
-    layout: "/admin",
-    name: "Calendar",
+    path: "/books",
+    name: "Books",
+    state: "openBooks",
     icon: "nc-icon nc-single-copy-04",
-    component: Calendar
+    views: [
+      {
+        path: "/add_edit_books",
+        layout: "/admin",
+        name: "Add/Edit Books",
+        mini: "A/E",
+        component: Dashboard
+      },
+      {
+        path: "/list_books",
+        layout: "/admin",
+        name: "List Books",
+        mini: "LS",
+        component: Dashboard
+      },
+    ]
+  },  
+  {
+    collapse: true,
+    path: "/exams",
+    name: "Exams",
+    state: "openExams",
+    icon: "nc-icon nc-watch-time",
+    views: [
+      {
+        path: "/create_main_exam_name",
+        layout: "/admin",
+        name: "Create main exam name",
+        mini: "EN",
+        component: Dashboard
+      },
+      {
+        path: "/create_exam",
+        layout: "/admin",
+        name: "Create exam",
+        mini: "CE",
+        component: Dashboard
+      },
+      {
+        path: "/gen_seat_numbers",
+        layout: "/admin",
+        name: "Generate seat numbers",
+        mini: "SN",
+        component: Dashboard
+      },
+    ]
   },
   {
     collapse: true,
-    path: "/pages",
-    name: "Pages",
-    state: "openPages",
-    icon: "nc-icon nc-puzzle-10",
+    path: "/results",
+    name: "Results",
+    state: "openResults",
+    icon: "nc-icon nc-chart-bar-32",
     views: [
       {
-        path: "/user-page",
+        path: "/enter_exam_results",
         layout: "/admin",
-        name: "User Page",
-        mini: "UP",
-        component: UserPage
+        name: "Enter exam results",
+        mini: "ER",
+        component: Dashboard
       },
       {
-        path: "/login-page",
-        layout: "/auth",
-        name: "Login Page",
-        mini: "LP",
-        component: LoginPage
+        path: "/list_results",
+        layout: "/admin",
+        name: "List results",
+        mini: "LR",
+        component: Dashboard
       },
       {
-        path: "/register-page",
-        layout: "/auth",
-        name: "Register",
-        mini: "RP",
-        component: RegisterPage
+        path: "/view_results",
+        layout: "/admin",
+        name: "View results",
+        mini: "VR",
+        component: Dashboard
       },
       {
-        path: "/lock-screen-page",
-        layout: "/auth",
-        name: "Lock Screen Page",
-        mini: "LSP",
-        component: LockScreenPage
-      }
+        path: "/grade_structures",
+        layout: "/admin",
+        name: "Grade structures",
+        mini: "GS",
+        component: Dashboard
+      },
     ]
-  }
+  },
+  {
+    collapse: true,
+    path: "/inventory",
+    name: "Inventory",
+    state: "openInventory",
+    icon: "nc-icon nc-settings-90",
+    views: [
+      {
+        path: "/add_edit_inventory",
+        layout: "/admin",
+        name: "Add/Edit inventory",
+        mini: "A/E",
+        component: Dashboard
+      },
+      {
+        path: "/list_inventory",
+        layout: "/admin",
+        name: "List inventory",
+        mini: "LI",
+        component: Dashboard
+      },
+    ]
+  },  
+  {
+    collapse: true,
+    path: "/cards",
+    name: "Cards",
+    state: "openCards",
+    icon: "nc-icon nc-badge",
+    views: [
+      {
+        path: "/list_cards",
+        layout: "/admin",
+        name: "List cards",
+        mini: "LC",
+        component: Dashboard
+      },
+    ]
+  },   
+  {
+    path: "/print_empty_student_add_edit",
+    layout: "/admin",
+    name: "Print Material",
+    icon: "nc-icon nc-paper-2",
+    component: Dashboard
+  },   
+  // {
+  //   collapse: true,
+  //   path: "/forms",
+  //   name: "Forms",
+  //   state: "openForms",
+  //   icon: "nc-icon nc-notes",
+  //   views: [
+  //     {
+  //       path: "/regular-forms",
+  //       layout: "/admin",
+  //       name: "Regular Forms",
+  //       mini: "RF",
+  //       component: RegularForms
+  //     },
+  //     {
+  //       path: "/extended-forms",
+  //       layout: "/admin",
+  //       name: "Extended Forms",
+  //       mini: "EF",
+  //       component: ExtendedForms
+  //     },
+  //     {
+  //       path: "/validation-forms",
+  //       layout: "/admin",
+  //       name: "Validation Forms",
+  //       mini: "VF",
+  //       component: ValidationForms
+  //     },
+  //     {
+  //       path: "/wizard",
+  //       layout: "/admin",
+  //       name: "Wizard",
+  //       mini: "W",
+  //       component: Wizard
+  //     }
+  //   ]
+  // },
+  // {
+  //   collapse: true,
+  //   path: "/tables",
+  //   name: "Tables",
+  //   state: "openTables",
+  //   icon: "nc-icon nc-paper-2",
+  //   views: [
+  //     {
+  //       path: "/regular-tables",
+  //       layout: "/admin",
+  //       name: "Regular Tables",
+  //       mini: "RT",
+  //       component: RegularTables
+  //     },
+  //     {
+  //       path: "/extended-tables",
+  //       layout: "/admin",
+  //       name: "Extended Tables",
+  //       mini: "ET",
+  //       component: ExtendedTables
+  //     },
+  //     {
+  //       path: "/react-table",
+  //       layout: "/admin",
+  //       name: "React Table",
+  //       mini: "RT",
+  //       component: ReactTables
+  //     }
+  //   ]
+  // },
+  // {
+  //   collapse: true,
+  //   path: "/maps",
+  //   name: "Maps",
+  //   state: "openMaps",
+  //   icon: "nc-icon nc-pin-3",
+  //   views: [
+  //     {
+  //       path: "/google-maps",
+  //       layout: "/admin",
+  //       name: "Google Maps",
+  //       mini: "GM",
+  //       component: GoogleMaps
+  //     },
+  //     {
+  //       path: "/full-screen-maps",
+  //       layout: "/admin",
+  //       name: "Full Screen Map",
+  //       mini: "FSM",
+  //       component: FullScreenMap
+  //     },
+  //     {
+  //       path: "/vector-maps",
+  //       layout: "/admin",
+  //       name: "Vector Map",
+  //       mini: "VM",
+  //       component: VectorMap
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: "/charts",
+  //   layout: "/admin",
+  //   name: "Charts",
+  //   icon: "nc-icon nc-chart-bar-32",
+  //   component: Charts
+  // },
+  // {
+  //   path: "/calendar",
+  //   layout: "/admin",
+  //   name: "Calendar",
+  //   icon: "nc-icon nc-single-copy-04",
+  //   component: Calendar
+  // },
+  // {
+  //   collapse: true,
+  //   path: "/pages",
+  //   name: "Pages",
+  //   state: "openPages",
+  //   icon: "nc-icon nc-puzzle-10",
+  //   views: [
+  //     {
+  //       path: "/user-page",
+  //       layout: "/admin",
+  //       name: "User Page",
+  //       mini: "UP",
+  //       component: UserPage
+  //     },
+  //     {
+  //       path: "/login-page",
+  //       layout: "/auth",
+  //       name: "Login Page",
+  //       mini: "LP",
+  //       component: LoginPage
+  //     },
+  //     {
+  //       path: "/register-page",
+  //       layout: "/auth",
+  //       name: "Register",
+  //       mini: "RP",
+  //       component: RegisterPage
+  //     },
+  //     {
+  //       path: "/lock-screen-page",
+  //       layout: "/auth",
+  //       name: "Lock Screen Page",
+  //       mini: "LSP",
+  //       component: LockScreenPage
+  //     }
+  //   ]
+  // }
 ];
 export default routes;

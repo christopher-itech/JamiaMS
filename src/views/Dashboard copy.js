@@ -38,7 +38,7 @@ function Dashboard() {
                   <Col xs="7">
                     <div className="numbers">
                       <p className="card-category">Number</p>
-                      <Card.Title as="h4">1,500</Card.Title>
+                      <Card.Title as="h4">150GB</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -46,8 +46,8 @@ function Dashboard() {
               <Card.Footer>
                 <hr></hr>
                 <div className="stats">
-                  <i className="fas fa-user mr-1"></i>
-                  Resident Students
+                  <i className="fas fa-redo mr-1"></i>
+                  Update Now
                 </div>
               </Card.Footer>
             </Card>
@@ -63,8 +63,8 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Number</p>
-                      <Card.Title as="h4">1,345</Card.Title>
+                      <p className="card-category">Revenue</p>
+                      <Card.Title as="h4">$ 1,345</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -72,8 +72,8 @@ function Dashboard() {
               <Card.Footer>
                 <hr></hr>
                 <div className="stats">
-                  <i className="far fa-user mr-1"></i>
-                  Nonresident students
+                  <i className="far fa-calendar-alt mr-1"></i>
+                  Last day
                 </div>
               </Card.Footer>
             </Card>
@@ -131,7 +131,7 @@ function Dashboard() {
             </Card>
           </Col>
         </Row>
-        {/* <Row>
+        <Row>
           <Col md="12">
             <Card>
               <Card.Header>
@@ -764,7 +764,7 @@ function Dashboard() {
               </Card.Footer>
             </Card>
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </>
   );
