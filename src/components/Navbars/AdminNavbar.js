@@ -46,7 +46,7 @@ function AdminNavbar() {
               </Button>
             </div>
             <Navbar.Brand href="#pablo" onClick={(e) => e.preventDefault()}>
-              Buttons
+              Dashboard
             </Navbar.Brand>
           </div>
           <button
