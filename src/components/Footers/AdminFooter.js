@@ -22,7 +22,7 @@ function AdminFooter() {
       <footer className="footer">
         <Container fluid className="pl-4 ml-2">
           <nav>
-            <ul className="footer-menu">
+            {/* <ul className="footer-menu">
               <li>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   Home
@@ -43,11 +43,10 @@ function AdminFooter() {
                   Blog
                 </a>
               </li>
-            </ul>
+            </ul> */}
             <p className="copyright text-center">
-              © <script>document.write(new Date().getFullYear())</script>
-              <a href="http://www.creative-tim.com">Creative Tim</a>, made with
-              love for a better web
+              © 2023 JAMIA Management System
+              {/* <a href="http://xxx.xxx.xxx"> </a> */}
             </p>
           </nav>
         </Container>

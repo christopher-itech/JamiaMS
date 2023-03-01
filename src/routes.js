@@ -59,14 +59,14 @@ var routes = [
         layout: "/admin",
         name: "Add/Edit Student",
         mini: "A/E",
-        component: Dashboard
+        component: RegularForms
       },
       {
         path: "/list_students",
         layout: "/admin",
         name: "List Students",
         mini: "LS",
-        component: Dashboard
+        component: RegularTables
       },
       // {
       //   path: "/panels",

@@ -19,10 +19,14 @@ function RegularForms() {
     <>
       <Container fluid>
         <Row>
-          <Col md="6">
+          <Col md="12">
             <Card className="stacked-form">
               <Card.Header>
                 <Card.Title as="h4">Stacked Form</Card.Title>
+                <p className="card-category">
+                  Handcrafted by our friends from{" "}
+                  <a href="https://nucleoapp.com/?ref=1712">NucleoApp</a>
+                </p>
               </Card.Header>
               <Card.Body>
                 <Form action="#" method="#">
@@ -58,67 +62,6 @@ function RegularForms() {
                 <Button className="btn-fill" type="submit" variant="info">
                   Submit
                 </Button>
-              </Card.Footer>
-            </Card>
-          </Col>
-          <Col md="6">
-            <Card className="horizontal-form">
-              <Card.Header>
-                <Card.Title as="h4">Horizontal Form</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <Form className="form-horizontal">
-                  <Form.Group>
-                    <Row>
-                      <Col className="control-label" md="3">
-                        Email
-                      </Col>
-                      <Col md="9">
-                        <Form.Control
-                          placeholder="Email"
-                          type="email"
-                        ></Form.Control>
-                      </Col>
-                    </Row>
-                  </Form.Group>
-                  <Form.Group>
-                    <Row>
-                      <Col className="control-label" md="3">
-                        Password
-                      </Col>
-                      <Col md="9">
-                        <Form.Control
-                          placeholder="Password"
-                          type="password"
-                        ></Form.Control>
-                      </Col>
-                    </Row>
-                  </Form.Group>
-                  <Form.Group>
-                    <Row>
-                      <Col md="3"></Col>
-                      <Col md="9">
-                        <Form.Check>
-                          <Form.Check.Label>
-                            <Form.Check.Input
-                              defaultValue=""
-                              type="checkbox"
-                            ></Form.Check.Input>
-                            <span className="form-check-sign"></span>
-                            Remember me
-                          </Form.Check.Label>
-                        </Form.Check>
-                      </Col>
-                    </Row>
-                  </Form.Group>
-                </Form>
-              </Card.Body>
-              <Card.Footer>
-                <Col md="9">
-                  <Button className="btn-fill" type="submit" variant="info">
-                    Sign in
-                  </Button>
-                </Col>
               </Card.Footer>
             </Card>
           </Col>
