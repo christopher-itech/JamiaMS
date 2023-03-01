@@ -25,202 +25,129 @@ function Dashboard() {
   return (
     <>
       <Container fluid>
-        <Row>
-          <Col lg="3" sm="6">
-            <Card className="card-stats">
-              <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-chart text-warning"></i>
-                    </div>
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Number</p>
-                      <Card.Title as="h4">1,500</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="fas fa-user mr-1"></i>
-                  Resident Students
-                </div>
-              </Card.Footer>
-            </Card>
-          </Col>
-          <Col lg="3" sm="6">
-            <Card className="card-stats">
-              <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-light-3 text-success"></i>
-                    </div>
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Number</p>
-                      <Card.Title as="h4">1,345</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="far fa-user mr-1"></i>
-                  Nonresident students
-                </div>
-              </Card.Footer>
-            </Card>
-          </Col>
-          <Col lg="3" sm="6">
-            <Card className="card-stats">
-              <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-vector text-danger"></i>
-                    </div>
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Errors</p>
-                      <Card.Title as="h4">23</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="far fa-clock-o mr-1"></i>
-                  In the last hour
-                </div>
-              </Card.Footer>
-            </Card>
-          </Col>
-          <Col lg="3" sm="6">
-            <Card className="card-stats">
-              <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-favourite-28 text-primary"></i>
-                    </div>
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Followers</p>
-                      <Card.Title as="h4">+45K</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="fas fa-redo mr-1"></i>
-                  Update now
-                </div>
-              </Card.Footer>
-            </Card>
-          </Col>
-        </Row>
-        {/* <Row>
+      <Row>
           <Col md="12">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Global Sales by Top Locations</Card.Title>
-                <p className="card-category">All products that were shipped</p>
+                <Card.Title as="h4">States</Card.Title>
+                <p className="card-category">All students, tutors and employees</p>
               </Card.Header>
               <Card.Body>
                 <Row>
                   <Col md="6">
                     <Table responsive>
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th className="text-right">Total Number</th>
+                          <th className="text-right">Actived</th>
+                        </tr>
+                      </thead>
                       <tbody>
                         <tr>
-                          <td>
+                          {/* <td>
                             <div className="flag">
                               <img
                                 alt="..."
                                 src={require("assets/img/flags/US.png")}
                               ></img>
                             </div>
-                          </td>
-                          <td>USA</td>
+                          </td> */}
+                          <td>Resident students</td>
                           <td className="text-right">2.920</td>
-                          <td className="text-right">53.23%</td>
+                          <td className="text-right">2.920</td>
                         </tr>
                         <tr>
-                          <td>
+                          {/* <td>
                             <div className="flag">
                               <img
                                 alt="..."
                                 src={require("assets/img/flags/DE.png")}
                               ></img>
                             </div>
-                          </td>
-                          <td>Germany</td>
+                          </td> */}
+                          <td>Nonresident students</td>
                           <td className="text-right">1.300</td>
-                          <td className="text-right">20.43%</td>
+                          <td className="text-right">1.300</td>
                         </tr>
                         <tr>
-                          <td>
+                          {/* <td>
                             <div className="flag">
                               <img
                                 alt="..."
                                 src={require("assets/img/flags/AU.png")}
                               ></img>
                             </div>
-                          </td>
-                          <td>Australia</td>
+                          </td> */}
+                          <td>Dares-nizami students</td>
                           <td className="text-right">760</td>
-                          <td className="text-right">10.35%</td>
+                          <td className="text-right">760</td>
                         </tr>
                         <tr>
-                          <td>
+                          {/* <td>
                             <div className="flag">
                               <img
                                 alt="..."
                                 src={require("assets/img/flags/GB.png")}
                               ></img>
                             </div>
-                          </td>
-                          <td>United Kingdom</td>
+                          </td> */}
+                          <td>Hafiz students</td>
                           <td className="text-right">690</td>
-                          <td className="text-right">7.87%</td>
+                          <td className="text-right">690</td>
                         </tr>
                         <tr>
-                          <td>
+                          {/* <td>
                             <div className="flag">
                               <img
                                 alt="..."
                                 src={require("assets/img/flags/RO.png")}
                               ></img>
                             </div>
-                          </td>
-                          <td>Romania</td>
+                          </td> */}
+                          <td>Male students</td>
                           <td className="text-right">600</td>
-                          <td className="text-right">5.94%</td>
+                          <td className="text-right">600</td>
                         </tr>
                         <tr>
-                          <td>
+                          {/* <td>
                             <div className="flag">
                               <img
                                 alt="..."
                                 src={require("assets/img/flags/BR.png")}
                               ></img>
                             </div>
-                          </td>
-                          <td>Brasil</td>
+                          </td> */}
+                          <td>Female students</td>
                           <td className="text-right">550</td>
-                          <td className="text-right">4.34%</td>
+                          <td className="text-right">550</td>
                         </tr>
+                        <tr>
+                          {/* <td>
+                            <div className="flag">
+                              <img
+                                alt="..."
+                                src={require("assets/img/flags/BR.png")}
+                              ></img>
+                            </div>
+                          </td> */}
+                          <td>Total employees</td>
+                          <td className="text-right">550</td>
+                          <td className="text-right">550</td>
+                        </tr>
+                        <tr>
+                          {/* <td>
+                            <div className="flag">
+                              <img
+                                alt="..."
+                                src={require("assets/img/flags/BR.png")}
+                              ></img>
+                            </div>
+                          </td> */}
+                          <td>Total tutors</td>
+                          <td className="text-right">550</td>
+                          <td className="text-right">550</td>
+                        </tr>                                                
                       </tbody>
                     </Table>
                   </Col>
@@ -270,69 +197,255 @@ function Dashboard() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
+        </Row>  
         <Row>
-          <Col md="4">
-            <Card>
-              <Card.Header>
-                <Card.Title as="h4">Email Statistics</Card.Title>
-                <p className="card-category">Last Campaign Performance</p>
-              </Card.Header>
+          <Col lg="3" sm="6">
+            <Card className="card-stats">
               <Card.Body>
-                <ChartistGraph
-                  className="ct-perfect-fourth"
-                  data={{
-                    labels: ["40%", "20%", "40%"],
-                    series: [40, 20, 40]
-                  }}
-                  type="Pie"
-                />
+                <Row>
+                  <Col xs="4">
+                    <div className="icon-big text-center icon-warning">
+                      <i className="nc-icon nc-badge text-warning"></i>
+                    </div>
+                  </Col>
+                  <Col xs="8">
+                    <div className="numbers">
+                      <p className="card-category">Resident Students</p>
+                      <Card.Title as="h4">1,500</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
               </Card.Body>
               <Card.Footer>
-                <div className="legend">
-                  <i className="fas fa-circle mr-1 text-info"></i>
-                  Open <i className="fas fa-circle mr-1 text-danger"></i>
-                  Bounce <i className="fas fa-circle mr-1 text-warning"></i>
-                  Unsubscribe
-                </div>
                 <hr></hr>
                 <div className="stats">
-                  <i className="far fa-clock-o"></i>
-                  Campaign sent 2 days ago
+                  <i className="fas fa-user mr-1"></i>
+                  78.6% of total students
                 </div>
               </Card.Footer>
             </Card>
           </Col>
-          <Col md="8">
+          <Col lg="3" sm="6">
+            <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                  <Col xs="4">
+                    <div className="icon-big text-center icon-warning">
+                      <i className="nc-icon nc-badge text-secondary"></i>
+                    </div>
+                  </Col>
+                  <Col xs="8">
+                    <div className="numbers">
+                      <p className="card-category">Nonresident students</p>
+                      <Card.Title as="h4">1,345</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <i className="far fa-user mr-1"></i>
+                  52.1% of total students
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>
+          <Col lg="3" sm="6">
+            <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                  <Col xs="5">
+                    <div className="icon-big text-center icon-warning">
+                      <i className="nc-icon nc-explore-2 text-success"></i>
+                    </div>
+                  </Col>
+                  <Col xs="7">
+                    <div className="numbers">
+                      <p className="card-category">Dares-nizami students</p>
+                      <Card.Title as="h4">1,345</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <i className="fas fa-user mr-1"></i>
+                  50.5% of total students
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>
+          <Col lg="3" sm="6">
+            <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                  <Col xs="5">
+                    <div className="icon-big text-center icon-warning">
+                      <i className="nc-icon nc-explore-2 text-secondary"></i>
+                    </div>
+                  </Col>
+                  <Col xs="7">
+                    <div className="numbers">
+                      <p className="card-category">Hafiz students</p>
+                      <Card.Title as="h4">1,345</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <i className="far fa-user mr-1"></i>
+                  40.7% of total students
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>   
+        </Row>              
+        <Row>
+        <Col lg="3" sm="6">
+            <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                  <Col xs="5">
+                    <div className="icon-big text-center icon-warning">
+                      {/* <i className="nc-icon nc-single-02 text-secondary"></i> */}
+                      <i className="fa fa-user text-success"></i>
+                    </div>
+                  </Col>
+                  <Col xs="7">
+                    <div className="numbers">
+                      <p className="card-category">Male Students</p>
+                      <Card.Title as="h4">1,345</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <i className="far fa-user mr-1"></i>
+                  69.8% of total students 
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col> 
+          <Col lg="3" sm="6">
+            <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                  <Col xs="5">
+                    <div className="icon-big text-center icon-warning">
+                      {/* <i className="nc-icon nc-single-02 text-secondary"></i> */}
+                      <i className="fas fa-user-md text-danger"></i>
+                    </div>
+                  </Col>
+                  <Col xs="7">
+                    <div className="numbers">
+                      <p className="card-category">Female students</p>
+                      <Card.Title as="h4">1,345</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <i className="far fa-user mr-1"></i>
+                  30.2% of total students
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>  
+          <Col lg="3" sm="6">
+            <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                  <Col xs="5">
+                    <div className="icon-big text-center icon-warning">
+                      {/* <i className="nc-icon nc-single-02 text-success"></i> */}
+                      <i className="fas fa-user-edit text-warning"></i>                      
+                    </div>
+                  </Col>
+                  <Col xs="7">
+                    <div className="numbers">
+                      <p className="card-category">Total tutors</p>
+                      <Card.Title as="h4">1,345</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <i className="fas fa-user mr-1"></i>
+                  Male: 1000, Female: 345
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>   
+          <Col lg="3" sm="6">
+            <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                  <Col xs="5">
+                    <div className="icon-big text-center icon-warning">
+                      {/* <i className="nc-icon nc-single-02 text-secondary"></i> */}
+                     <i className="fas fa-user-secret text-secondary"></i>
+                    </div>
+                  </Col>
+                  <Col xs="7">
+                    <div className="numbers">
+                      <p className="card-category">Total employees</p>
+                      <Card.Title as="h4">1,345</Card.Title>
+                    </div>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <i className="far fa-user mr-1"></i>
+                  Male: 1000, Female: 345
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>    
+        </Row>
+        <Row>
+          <Col md="12">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Users Behavior</Card.Title>
-                <p className="card-category">24 Hours performance</p>
+                <Card.Title as="h4">Univ Growth</Card.Title>
+                <p className="card-category">8 years history</p>
               </Card.Header>
               <Card.Body>
                 <ChartistGraph
                   data={{
                     labels: [
-                      "9:00AM",
-                      "12:00AM",
-                      "3:00PM",
-                      "6:00PM",
-                      "9:00PM",
-                      "12:00PM",
-                      "3:00AM",
-                      "6:00AM",
+                      "2015",
+                      "2016",
+                      "2017",
+                      "2018",
+                      "2019",
+                      "2020",
+                      "2021",
+                      "2022",
+                      "2023",
                       ""
                     ],
                     series: [
-                      [287, 385, 490, 492, 554, 586, 698, 695, 630],
-                      [67, 152, 143, 240, 287, 335, 435, 437, 470],
-                      [23, 113, 67, 108, 190, 239, 307, 308, 430]
+                      [2870, 3805, 4900, 4920, 5054, 5806, 6098, 6095, 6030],
+                      [670, 1520, 1430, 2400, 2087, 3035, 4350, 4037, 4700],
+                      [230, 1130, 670, 1008, 1900, 2039, 3070, 3008, 4300]
                     ]
                   }}
                   type="Line"
                   options={{
                     low: 0,
-                    high: 800,
+                    high: 8000,
                     showArea: false,
                     height: "245px",
                     axisX: {
@@ -363,20 +476,20 @@ function Dashboard() {
               <Card.Footer>
                 <div className="legend">
                   <i className="fas fa-circle mr-1 text-info"></i>
-                  Open <i className="fas fa-circle mr-1 text-danger"></i>
-                  Click <i className="fas fa-circle mr-1 text-warning"></i>
-                  Click Second Time
+                  Students <i className="fas fa-circle mr-1 text-danger"></i>
+                  Tutors <i className="fas fa-circle mr-1 text-warning"></i>
+                  Employees
                 </div>
-                <hr></hr>
+                {/* <hr></hr>
                 <div className="stats">
                   <i className="fas fa-history"></i>
                   Updated 3 minutes ago
-                </div>
+                </div> */}
               </Card.Footer>
             </Card>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col md="6">
             <Card>
               <Card.Header>
