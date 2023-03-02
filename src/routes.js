@@ -17,6 +17,8 @@
 import Dashboard from "views/Dashboard.js";
 import StudentsAddEdit from "views/Forms/StudentsAddEdit.js";
 import StudentsList from "views/Forms/StudentsList.js";
+import EmployeesAddEdit from "views/Forms/EmployeesAddEdit.js";
+import EmployeesList from "views/Forms/EmployeesList.js";
 
 import Buttons from "views/Components/Buttons.js";
 import GridSystem from "views/Components/GridSystem.js";
@@ -84,14 +86,14 @@ var routes = [
         layout: "/admin",
         name: "Add/Edit Employee",
         mini: "A/E",
-        component: Dashboard
+        component: EmployeesAddEdit
       },
       {
         path: "/list_employee",
         layout: "/admin",
         name: "List Employee",
         mini: "LS",
-        component: Dashboard
+        component: EmployeesList
       },
     ]
   },  
