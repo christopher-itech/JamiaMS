@@ -19,6 +19,7 @@ import StudentsAddEdit from "views/Forms/StudentsAddEdit.js";
 import StudentsList from "views/Forms/StudentsList.js";
 import EmployeesAddEdit from "views/Forms/EmployeesAddEdit.js";
 import EmployeesList from "views/Forms/EmployeesList.js";
+import Class from "views/Forms/Class.js";
 
 import Buttons from "views/Components/Buttons.js";
 import GridSystem from "views/Components/GridSystem.js";
@@ -98,28 +99,35 @@ var routes = [
     ]
   },  
   {
-    collapse: true,
     path: "/class",
+    layout: "/admin",
     name: "Class",
-    state: "openClass",
     icon: "nc-icon nc-grid-45",
-    views: [
-      {
-        path: "/add_edit_class",
-        layout: "/admin",
-        name: "Add/Edit Class",
-        mini: "A/E",
-        component: Dashboard
-      },
-      {
-        path: "/list_class",
-        layout: "/admin",
-        name: "List Class",
-        mini: "LS",
-        component: Dashboard
-      },
-    ]
-  },  
+    component: Class
+  },
+  // {
+  //   collapse: true,
+  //   path: "/class",
+  //   name: "Class",
+  //   state: "openClass",
+  //   icon: "nc-icon nc-grid-45",
+  //   views: [
+  //     {
+  //       path: "/add_edit_class",
+  //       layout: "/admin",
+  //       name: "Add/Edit Class",
+  //       mini: "A/E",
+  //       component: Dashboard
+  //     },
+  //     {
+  //       path: "/list_class",
+  //       layout: "/admin",
+  //       name: "List Class",
+  //       mini: "LS",
+  //       component: Dashboard
+  //     },
+  //   ]
+  // },  
   {
     collapse: true,
     path: "/books",
