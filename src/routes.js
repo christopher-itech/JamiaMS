@@ -20,6 +20,7 @@ import StudentsList from "views/Forms/StudentsList.js";
 import EmployeesAddEdit from "views/Forms/EmployeesAddEdit.js";
 import EmployeesList from "views/Forms/EmployeesList.js";
 import Class from "views/Forms/Class.js";
+import Book from "views/Forms/Book.js";
 
 import Buttons from "views/Components/Buttons.js";
 import GridSystem from "views/Components/GridSystem.js";
@@ -129,28 +130,35 @@ var routes = [
   //   ]
   // },  
   {
-    collapse: true,
-    path: "/books",
-    name: "Books",
-    state: "openBooks",
+    path: "/book",
+    layout: "/admin",
+    name: "Book",
     icon: "nc-icon nc-single-copy-04",
-    views: [
-      {
-        path: "/add_edit_books",
-        layout: "/admin",
-        name: "Add/Edit Books",
-        mini: "A/E",
-        component: Dashboard
-      },
-      {
-        path: "/list_books",
-        layout: "/admin",
-        name: "List Books",
-        mini: "LS",
-        component: Dashboard
-      },
-    ]
-  },  
+    component: Book
+  },
+  // {
+  //   collapse: true,
+  //   path: "/books",
+  //   name: "Books",
+  //   state: "openBooks",
+  //   icon: "nc-icon nc-single-copy-04",
+  //   views: [
+  //     {
+  //       path: "/add_edit_books",
+  //       layout: "/admin",
+  //       name: "Add/Edit Books",
+  //       mini: "A/E",
+  //       component: Dashboard
+  //     },
+  //     {
+  //       path: "/list_books",
+  //       layout: "/admin",
+  //       name: "List Books",
+  //       mini: "LS",
+  //       component: Dashboard
+  //     },
+  //   ]
+  // },  
   {
     collapse: true,
     path: "/exams",
