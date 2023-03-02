@@ -15,6 +15,9 @@
 
 */
 import Dashboard from "views/Dashboard.js";
+import StudentsAddEdit from "views/Forms/StudentsAddEdit.js";
+import StudentsList from "views/Forms/StudentsList.js";
+
 import Buttons from "views/Components/Buttons.js";
 import GridSystem from "views/Components/GridSystem.js";
 import Panels from "views/Components/Panels.js";
@@ -22,7 +25,6 @@ import SweetAlert from "views/Components/SweetAlertPage.js";
 import Notifications from "views/Components/Notifications.js";
 import Icons from "views/Components/Icons.js";
 import Typography from "views/Components/Typography.js";
-import RegularForms from "views/Forms/RegularForms.js";
 import ExtendedForms from "views/Forms/ExtendedForms.js";
 import ValidationForms from "views/Forms/ValidationForms.js";
 import Wizard from "views/Forms/Wizard/Wizard.js";
@@ -59,50 +61,15 @@ var routes = [
         layout: "/admin",
         name: "Add/Edit Student",
         mini: "A/E",
-        component: RegularForms
+        component: StudentsAddEdit
       },
       {
         path: "/list_students",
         layout: "/admin",
         name: "List Students",
         mini: "LS",
-        component: RegularTables
+        component: StudentsList
       },
-      // {
-      //   path: "/panels",
-      //   layout: "/admin",
-      //   name: "Panels",
-      //   mini: "P",
-      //   component: Panels
-      // },
-      // {
-      //   path: "/sweet-alert",
-      //   layout: "/admin",
-      //   name: "Sweet Alert",
-      //   mini: "SA",
-      //   component: SweetAlert
-      // },
-      // {
-      //   path: "/notifications",
-      //   layout: "/admin",
-      //   name: "Notifications",
-      //   mini: "N",
-      //   component: Notifications
-      // },
-      // {
-      //   path: "/icons",
-      //   layout: "/admin",
-      //   name: "Icons",
-      //   mini: "I",
-      //   component: Icons
-      // },
-      // {
-      //   path: "/typography",
-      //   layout: "/admin",
-      //   name: "Typography",
-      //   mini: "T",
-      //   component: Typography
-      // }
     ]
   },
   {
