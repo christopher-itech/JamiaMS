@@ -147,7 +147,7 @@ function Sidebar({ routes, image, background }) {
           </div>
           <div className="user">
             <div className="photo">
-              <img alt="..." src={require("assets/img/default-avatar.png")} />
+              <img alt="..." src={require("assets/img/default-avatar1.png")} />
             </div>
             <div className="info">
               <a
