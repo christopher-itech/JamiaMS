@@ -16,6 +16,7 @@ import {
   Table,
   Row,
   Col,
+  Modal,
   OverlayTrigger,
   Tooltip
 } from "react-bootstrap";
@@ -25,6 +26,11 @@ function StudentsList() {
   const [admissionStatus, setAdmissionStatus] = React.useState("");
   const [boardType, setBoardType] = React.useState("");
   const [gender, setGender] = React.useState("");
+  const [modalExamResult, setModalExamResult] = React.useState(false);
+  const [modalBooks, setModalBooks] = React.useState(false);
+  const [modalInventory, setModalInventory] = React.useState(false);
+  const [modalIDCard, setModalIDCard] = React.useState(false);
+  const [modal, setModal] = React.useState(false);
   
   return (
     <>
@@ -195,24 +201,6 @@ function StudentsList() {
                       <td className="text-right">New</td>
                       <td className="text-right">Local</td>
                       <td className="td-actions text-center">
-                        {/* <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              View Profile..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                            variant="info"
-                          >
-                            <i className="fas fa-user"></i>
-                          </Button>
-                        </OverlayTrigger> */}
                         <OverlayTrigger
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
@@ -235,13 +223,85 @@ function StudentsList() {
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                           overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Exam results
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalExamResult(!modalExamResult)}
+                            variant="warning"
+                          >
+                            <i className="fas fa-star"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Books
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalBooks(!modalBooks)}
+                            variant="info"
+                          >
+                            <i className="fas fa-book-open"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Inventory
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalInventory(!modalInventory)}
+                            variant="success"
+                          >
+                            <i className="fas fa-certificate"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              ID card
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalIDCard(!modalIDCard)}
+                            variant="dark"
+                          >
+                            <i className="far fa-address-card"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
                             <Tooltip id="tooltip-255158527">Remove..</Tooltip>
                           }
                         >
                           <Button
                             className="btn-link btn-xs"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={() => setModal(!modal)}
                             variant="danger"
                           >
                             <i className="fas fa-times"></i>
@@ -260,24 +320,6 @@ function StudentsList() {
                       <td className="text-right">New</td>
                       <td className="text-right">Local</td>
                       <td className="td-actions text-center">
-                        {/* <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              View Profile..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                            variant="info"
-                          >
-                            <i className="fas fa-user"></i>
-                          </Button>
-                        </OverlayTrigger> */}
                         <OverlayTrigger
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
@@ -300,13 +342,85 @@ function StudentsList() {
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                           overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Exam results
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalExamResult(!modalExamResult)}
+                            variant="warning"
+                          >
+                            <i className="fas fa-star"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Books
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalBooks(!modalBooks)}
+                            variant="info"
+                          >
+                            <i className="fas fa-book-open"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Inventory
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalInventory(!modalInventory)}
+                            variant="success"
+                          >
+                            <i className="fas fa-certificate"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              ID card
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalIDCard(!modalIDCard)}
+                            variant="dark"
+                          >
+                            <i className="far fa-address-card"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
                             <Tooltip id="tooltip-255158527">Remove..</Tooltip>
                           }
                         >
                           <Button
                             className="btn-link btn-xs"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={() => setModal(!modal)}
                             variant="danger"
                           >
                             <i className="fas fa-times"></i>
@@ -325,24 +439,6 @@ function StudentsList() {
                       <td className="text-right">New</td>
                       <td className="text-right">Local</td>
                       <td className="td-actions text-center">
-                        {/* <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              View Profile..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                            variant="info"
-                          >
-                            <i className="fas fa-user"></i>
-                          </Button>
-                        </OverlayTrigger> */}
                         <OverlayTrigger
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
@@ -365,13 +461,85 @@ function StudentsList() {
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                           overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Exam results
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalExamResult(!modalExamResult)}
+                            variant="warning"
+                          >
+                            <i className="fas fa-star"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Books
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalBooks(!modalBooks)}
+                            variant="info"
+                          >
+                            <i className="fas fa-book-open"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Inventory
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalInventory(!modalInventory)}
+                            variant="success"
+                          >
+                            <i className="fas fa-certificate"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              ID card
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalIDCard(!modalIDCard)}
+                            variant="dark"
+                          >
+                            <i className="far fa-address-card"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
                             <Tooltip id="tooltip-255158527">Remove..</Tooltip>
                           }
                         >
                           <Button
                             className="btn-link btn-xs"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={() => setModal(!modal)}
                             variant="danger"
                           >
                             <i className="fas fa-times"></i>
@@ -390,24 +558,6 @@ function StudentsList() {
                       <td className="text-right">New</td>
                       <td className="text-right">Local</td>
                       <td className="td-actions text-center">
-                        {/* <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              View Profile..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                            variant="info"
-                          >
-                            <i className="fas fa-user"></i>
-                          </Button>
-                        </OverlayTrigger> */}
                         <OverlayTrigger
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
@@ -430,13 +580,85 @@ function StudentsList() {
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                           overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Exam results
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalExamResult(!modalExamResult)}
+                            variant="warning"
+                          >
+                            <i className="fas fa-star"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Books
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalBooks(!modalBooks)}
+                            variant="info"
+                          >
+                            <i className="fas fa-book-open"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Inventory
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalInventory(!modalInventory)}
+                            variant="success"
+                          >
+                            <i className="fas fa-certificate"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              ID card
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalIDCard(!modalIDCard)}
+                            variant="dark"
+                          >
+                            <i className="far fa-address-card"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
                             <Tooltip id="tooltip-255158527">Remove..</Tooltip>
                           }
                         >
                           <Button
                             className="btn-link btn-xs"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={() => setModal(!modal)}
                             variant="danger"
                           >
                             <i className="fas fa-times"></i>
@@ -455,24 +677,6 @@ function StudentsList() {
                       <td className="text-right">New</td>
                       <td className="text-right">Local</td>
                       <td className="td-actions text-center">
-                        {/* <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              View Profile..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                            variant="info"
-                          >
-                            <i className="fas fa-user"></i>
-                          </Button>
-                        </OverlayTrigger> */}
                         <OverlayTrigger
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
@@ -495,13 +699,85 @@ function StudentsList() {
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                           overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Exam results
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalExamResult(!modalExamResult)}
+                            variant="warning"
+                          >
+                            <i className="fas fa-star"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Books
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalBooks(!modalBooks)}
+                            variant="info"
+                          >
+                            <i className="fas fa-book-open"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              Inventory
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalInventory(!modalInventory)}
+                            variant="success"
+                          >
+                            <i className="fas fa-certificate"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
+                            <Tooltip id="tooltip-981231696">
+                              ID card
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            className="btn-link btn-xs"
+                            href="#pablo"
+                            onClick={() => setModalIDCard(!modalIDCard)}
+                            variant="dark"
+                          >
+                            <i className="far fa-address-card"></i>
+                          </Button>
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                          overlay={
                             <Tooltip id="tooltip-255158527">Remove..</Tooltip>
                           }
                         >
                           <Button
                             className="btn-link btn-xs"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={() => setModal(!modal)}
                             variant="danger"
                           >
                             <i className="fas fa-times"></i>
@@ -515,7 +791,258 @@ function StudentsList() {
             </Card>
           </Col>
         </Row>
+        {/* Exam result Modal */}
+        <Modal
+          className="modal-primary"
+          size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          onHide={() => {setModalExamResult(!modalExamResult)}}
+          show={modalExamResult}
+        >
+          <Card className="stacked-form">
+            <Card.Header>
+              <Card.Title className="text-center" as="h5">Andrew Mike's exam results</Card.Title>
+            </Card.Header>   
+            <Card.Body>      
+              <Table>
+                <thead>
+                  <tr>
+                    <th className="text-center">Exam name</th>
+                    <th className="text-center">Date</th>
+                    <th className="text-center">Seat number</th>
+                    <th className="text-center">Book1</th>
+                    <th className="text-center">Book2</th>
+                    <th className="text-center">Book3</th>
+                    <th className="text-center">Book4</th>
+                    <th className="text-center">Book5</th>
+                    <th className="text-center">Total</th>
+                    <th className="text-center">Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="text-center">Exam name 1</td>
+                    <td className="text-center">2023-03-11</td>
+                    <td className="text-center">3</td>
+                    <td className="text-center">                          
+                      91
+                    </td>
+                    <td className="text-center">                          
+                      87
+                    </td>
+                    <td className="text-center">                          
+                      90
+                    </td>
+                    <td className="text-center">                          
+                      87
+                    </td>
+                    <td className="text-center">                          
+                      95
+                    </td>
+                    <td className="text-center">                          
+                      475
+                    </td>
+                    <td className="text-center">                          
+                      A
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">Exam name 2</td>
+                    <td className="text-center">2023-03-15</td>
+                    <td className="text-center">15</td>
+                    <td className="text-center">                          
+                      91
+                    </td>
+                    <td className="text-center">                          
+                      87
+                    </td>
+                    <td className="text-center">                          
+                      90
+                    </td>
+                    <td className="text-center">                          
+                      87
+                    </td>
+                    <td className="text-center">                          
+                      95
+                    </td>
+                    <td className="text-center">                          
+                      425
+                    </td>
+                    <td className="text-center">                          
+                      B
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">Exam name 3</td>
+                    <td className="text-center">2023-03-17</td>
+                    <td className="text-center">11</td>
+                    <td className="text-center">                          
+                      91
+                    </td>
+                    <td className="text-center">                          
+                      87
+                    </td>
+                    <td className="text-center">                          
+                      90
+                    </td>
+                    <td className="text-center">                          
+                      87
+                    </td>
+                    <td className="text-center">                          
+                      95
+                    </td>
+                    <td className="text-center">                          
+                      455
+                    </td>
+                    <td className="text-center">                          
+                      A
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Card.Body>
+          </Card>
+          <div className="modal-footer">
+            <Button
+              className="btn-simple mx-auto"
+              onClick={() => {setModalExamResult(!modalExamResult)}}
+              variant="link"
+            >
+              Close
+            </Button>
+          </div>
+        </Modal>
+        {/* End Modal */}   
+        {/* Books Modal */}
+        <Modal
+          className="modal-primary"
+          size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          onHide={() => {setModalBooks(!modalBooks)}}
+          show={modalBooks}
+        >
+          <Card className="stacked-form">
+            <Card.Header>
+              <Card.Title className="text-center" as="h5">Andrew Mike's books</Card.Title>
+            </Card.Header>   
+            <Card.Body>      
+              <Table>
+                <thead>
+                  <tr>
+                    <th className="text-center">#</th>
+                    <th className="text-center">Book name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="text-center">1</td>
+                    <td className="text-center">Javascript Programming Professonal Guide 1</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">2</td>
+                    <td className="text-center">Computer Network Security</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">3</td>
+                    <td className="text-center">Data structure and algorithm</td>
+                  </tr>
 
+                </tbody>
+              </Table>
+            </Card.Body>
+          </Card>
+          <div className="modal-footer">
+            <Button
+              className="btn-simple mx-auto"
+              onClick={() => {setModalBooks(!modalBooks)}}
+              variant="link"
+            >
+              Close
+            </Button>
+          </div>
+        </Modal>
+        {/* End Modal */}   
+        {/* Inventory Modal */}
+        <Modal
+          className="modal-primary"
+          size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          onHide={() => {setModalInventory(!modalInventory)}}
+          show={modalInventory}
+        >
+          <Card className="stacked-form">
+            <Card.Header>
+              <Card.Title className="text-center" as="h5">Andrew Mike's inventory</Card.Title>
+            </Card.Header>   
+            <Card.Body>      
+              <Table>
+                <thead>
+                  <tr>
+                    <th className="text-center">#</th>
+                    <th className="text-center">Inventory title</th>
+                    <th className="text-right">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="text-center">1</td>
+                    <td className="text-center">A way to speed up compilation of go code</td>
+                    <td className="text-right">2023-02-05</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">2</td>
+                    <td className="text-center">AI slot machine</td>
+                    <td className="text-right">2023-02-05</td>
+                  </tr>
+                 </tbody>
+              </Table>
+            </Card.Body>
+          </Card>
+          <div className="modal-footer">
+            <Button
+              className="btn-simple mx-auto"
+              onClick={() => {setModalInventory(!modalInventory)}}
+              variant="link"
+            >
+              Close
+            </Button>
+          </div>
+        </Modal>
+        {/* End Modal */}   
+        {/* ID card Modal */}
+        <Modal
+          className="modal-primary"
+          size="sm"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          onHide={() => {setModalIDCard(!modalIDCard)}}
+          show={modalIDCard}
+        >
+          <Card className="stacked-form">
+            <Card.Header>
+              <Card.Title className="text-center" as="h5">Andrew Mike's ID card</Card.Title>
+            </Card.Header>   
+            <Card.Body className="text-center">      
+              <img
+                alt="id card"
+                src={require("assets/img/idcard.png")}
+              ></img>
+            </Card.Body>
+          </Card>
+          <div className="modal-footer">
+            <Button
+              className="btn-simple mx-auto"
+              onClick={() => {setModalIDCard(!modalIDCard)}}
+              variant="link"
+            >
+              Close
+            </Button>
+          </div>
+        </Modal>
+        {/* End Modal */}   
       </Container>
     </>
   );
