@@ -17,7 +17,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function StudentsAddEdit() {
+function PrintMaterial() {
   const [requiredClass, setRequiredClass] = React.useState("");
   const [dependency, setDependency] = React.useState({ value: "1", label: "School" });
   const [admissionType, setAdmissionType] = React.useState("");
@@ -60,7 +60,7 @@ function StudentsAddEdit() {
                             <label>Student's name</label>
                             <Form.Control
                               // defaultValue="Mike"
-                              placeholder="Abdullah Jan"
+                              // placeholder="Abdullah Jan"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -70,7 +70,7 @@ function StudentsAddEdit() {
                             <label>Father's Name</label>
                             <Form.Control
                               // defaultValue="Andrew"
-                              placeholder="Moti Allah Jan"
+                              // placeholder="Moti Allah Jan"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -80,26 +80,11 @@ function StudentsAddEdit() {
                         <Col className="pr-1" md="6">
                           <Form.Group>
                             <label>required classes</label>
-                            <Select
-                              className="react-select primary"
-                              classNamePrefix="react-select"
-                              name="requiredClass"
-                              value={requiredClass}
-                              onChange={(value) => setRequiredClass(value)}
-                              options={[
-                                // {
-                                //   value: "",
-                                //   label: "Single Option",
-                                //   isDisabled: true,
-                                // },
-                                { value: "1", label: "Hifz" },
-                                { value: "2", label: "1st grade" },
-                                { value: "3", label: "2st grade" },
-                                { value: "4", label: "3st grade" },
-                                { value: "5", label: "4st grade" },
-                              ]}
-                              placeholder="Single Select"
-                            />
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Moti Allah Jan"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                         <Col className="pl-1" md="6">
@@ -117,36 +102,21 @@ function StudentsAddEdit() {
                         <Col className="pr-1" md="6">
                           <Form.Group>
                             <label>date of birth</label>
-                            <ReactDatetime
-                              inputProps={{
-                                className: "form-control",
-                                placeholder: "Date Picker",
-                              }}
-                              timeFormat={false}
-                            ></ReactDatetime>
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Moti Allah Jan"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                         <Col className="p1-1" md="6">
                           <Form.Group>
                             <label>Dependency</label>
-                            <Select
-                              className="react-select primary"
-                              classNamePrefix="react-select"
-                              name="dependency"
-                              value={dependency}
-                              onChange={(value) => setDependency(value)}
-                              defaultValue={{ value: "1", label: "School" }}
-                              options={[
-                                // {
-                                //   value: "",
-                                //   label: "Single Option",
-                                //   isDisabled: true,
-                                // },
-                                { value: "1", label: "School" },
-                                { value: "2", label: "Self" },
-                              ]}
-                              placeholder="Single Select"
-                            />
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Moti Allah Jan"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                       </Row>
@@ -154,37 +124,21 @@ function StudentsAddEdit() {
                         <Col className="p1-1" md="6">
                           <Form.Group>
                             <label>Admission type</label>
-                            <Select
-                              className="react-select primary"
-                              classNamePrefix="react-select"
-                              name="admissionType"
-                              value={admissionType}
-                              onChange={(value) => setAdmissionType(value)}
-                              options={[
-                                { value: "1", label: "New" },
-                                { value: "2", label: "Renewal" },
-                              ]}
-                              placeholder="Single Select"
-                            />
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Moti Allah Jan"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                         <Col className="p1-1" md="6">
                           <Form.Group>
                             <label>Admission Status</label>
-                            <Select
-                              className="react-select primary"
-                              classNamePrefix="react-select"
-                              name="admissionStatus"
-                              value={admissionStatus}
-                              onChange={(value) => setAdmissionStatus(value)}
-                              defaultValue={{ value: "3", label: "Pending" }}
-                              options={[
-                                 { value: "1", label: "Active" },
-                                { value: "2", label: "Inactive" },
-                                { value: "3", label: "Pending" },
-                              ]}
-                              placeholder="Single Select"
-                            />
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Moti Allah Jan"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                       </Row>
@@ -192,36 +146,21 @@ function StudentsAddEdit() {
                         <Col className="p1-1" md="6">
                           <Form.Group>
                             <label>Type of board</label>
-                            <Select
-                              className="react-select primary"
-                              classNamePrefix="react-select"
-                              name="boardType"
-                              value={boardType}
-                              onChange={(value) => setBoardType(value)}
-                              options={[
-                                { value: "1", label: "Local" },
-                                { value: "2", label: "Federal" },
-                              ]}
-                              placeholder="Single Select"
-                            />
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Moti Allah Jan"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                         <Col className="p1-1" md="6">
                           <Form.Group>
                             <label>Gender</label>
-                            <Select
-                              className="react-select primary"
-                              classNamePrefix="react-select"
-                              name="gender"
-                              value={gender}
-                              onChange={(value) => setGender(value)}
-                              defaultValue={{ value: "3", label: "Pending" }}
-                              options={[
-                                 { value: "1", label: "Male" },
-                                { value: "2", label: "Female" },
-                              ]}
-                              placeholder="Single Select"
-                            />
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Karachi"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                       </Row>
@@ -230,7 +169,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>City</label>
                             <Form.Control
-                              placeholder="City name"
+                              // placeholder="City name"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -240,7 +179,7 @@ function StudentsAddEdit() {
                             <label>Province</label>
                             <Form.Control
                               // defaultValue="Andrew"
-                              placeholder="Province name"
+                              // placeholder="Province name"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -250,28 +189,11 @@ function StudentsAddEdit() {
                         <Col className="p1-1" md="6">
                           <Form.Group>
                             <label>Country</label>
-                            <Select
-                              className="react-select primary"
-                              classNamePrefix="react-select"
-                              name="country"
-                              value={country}
-                              onChange={(value) => setCountry(value)}
-                              defaultValue={{ value: "1", label: "Pakistan" }}
-                              options={[
-                                 { value: "1", label: "Pakistan" },
-                                { value: "2", label: "China" },
-                                { value: "3", label: "India" },
-                                { value: "4", label: "Indonesia" },
-                                { value: "5", label: "Bangladesh" },
-                                { value: "6", label: "Japan" },
-                                { value: "7", label: "Philippines" },
-                                { value: "8", label: "Vietnam" },
-                                { value: "9", label: "Turkey" },
-                                { value: "10", label: "Thailand" },
-                                { value: "11", label: "Myanmar" },
-                              ]}
-                              placeholder="Single Select"
-                            />
+                            <Form.Control
+                              // defaultValue="Andrew"
+                              // placeholder="Karachi"
+                              type="text"
+                            ></Form.Control>
                           </Form.Group>
                         </Col>
                         <Col className="pl-1" md="6">
@@ -279,7 +201,7 @@ function StudentsAddEdit() {
                             <label>Place of birth</label>
                             <Form.Control
                               // defaultValue="Andrew"
-                              placeholder="Karachi"
+                              // placeholder="Karachi"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -290,7 +212,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Schooling Achievements (Modern)</label>
                             <Form.Control
-                              placeholder="Metric"
+                              // placeholder="Metric"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -299,7 +221,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Grade obtained in the previous exam</label>
                             <Form.Control
-                              placeholder="330"
+                              // placeholder="330"
                               type="text"
                             ></Form.Control>                            
                           </Form.Group>
@@ -310,7 +232,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>The name of the university you attended in the last academic</label>
                             <Form.Control
-                              placeholder="Darul Uloom Karachi"
+                              // placeholder="Darul Uloom Karachi"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -319,7 +241,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Year</label>
                             <Form.Control
-                              placeholder="2023"
+                              // placeholder="2023"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -330,7 +252,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Temporary address</label>
                             <Form.Control
-                              placeholder="Karachi"
+                              // placeholder="Karachi"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -339,7 +261,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>permanent address</label>
                             <Form.Control
-                              placeholder="house no 655 shamshi colony shah faisal karachi sindh pakistan"
+                              // placeholder="house no 655 shamshi colony shah faisal karachi sindh pakistan"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -350,7 +272,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>ID card number</label>
                             <Form.Control
-                              placeholder="42401-88647551"
+                              // placeholder="42401-88647551"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -359,7 +281,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>First contact number</label>
                             <Form.Control
-                              placeholder="03212678963"
+                              // placeholder="03212678963"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -370,7 +292,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>The second contact number</label>
                             <Form.Control
-                              placeholder="03004936748"
+                              // placeholder="03004936748"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -379,7 +301,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Guardian’s name</label>
                             <Form.Control
-                              placeholder=""
+                              // placeholder=""
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -390,7 +312,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Guardian’s profession</label>
                             <Form.Control
-                              placeholder=""
+                              // placeholder=""
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -399,7 +321,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Type of relation with guardian</label>
                             <Form.Control
-                              placeholder=""
+                              // placeholder=""
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -410,7 +332,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>current address of the guardian</label>
                             <Form.Control
-                              placeholder="islamabad"
+                              // placeholder="islamabad"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -419,7 +341,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>guardian's first contact number</label>
                             <Form.Control
-                              placeholder="0321-6365956"
+                              // placeholder="0321-6365956"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -430,7 +352,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>guardian's second contact number</label>
                             <Form.Control
-                              placeholder="0300-5869574"
+                              // placeholder="0300-5869574"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -439,7 +361,7 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>supervisor's opinion of the previous class</label>
                             <Form.Control
-                              placeholder="its was good"
+                              // placeholder="its was good"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
@@ -450,12 +372,14 @@ function StudentsAddEdit() {
                           <Form.Group>
                             <label>Signature of the current class supervisor</label>
                             <Form.Control
-                              placeholder="Signature"
+                              // placeholder="Signature"
                               type="text"
                             ></Form.Control>
                           </Form.Group>
                         </Col>
                       </Row>  
+
+
                      <div className="clearfix"></div>
                     </Card.Body>
                   </Card>
@@ -463,7 +387,10 @@ function StudentsAddEdit() {
               </Card.Body>
               <Card.Footer>
                 <Button className="btn-fill" type="submit" variant="info">
-                  Submit
+                  <span className="btn-label">
+                  <i class="fas fa-print"></i>
+                  </span>
+                  &nbsp;Print
                 </Button>
               </Card.Footer>
             </Card>
@@ -474,4 +401,4 @@ function StudentsAddEdit() {
   );
 }
 
-export default StudentsAddEdit;
+export default PrintMaterial;

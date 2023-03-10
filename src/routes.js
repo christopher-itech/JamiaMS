@@ -21,6 +21,14 @@ import EmployeesAddEdit from "views/Forms/EmployeesAddEdit.js";
 import EmployeesList from "views/Forms/EmployeesList.js";
 import Class from "views/Forms/Class.js";
 import Book from "views/Forms/Book.js";
+import ExamNameCreate from "views/Forms/ExamNameCreate.js";
+import ExamCreate from "views/Forms/ExamCreate.js";
+import ExamSeatGeneration from "views/Forms/ExamSeatGeneration.js";
+import PrintMaterial from "views/Forms/PrintMaterial.js";
+import ResultEnter from "views/Forms/ResultEnter.js";
+import ResultView from "views/Forms/ResultView.js";
+import ResultGradeStructure from "views/Forms/ResultGradeStructure.js";
+import ResultList from "views/Forms/ResultList.js";
 
 import Buttons from "views/Components/Buttons.js";
 import GridSystem from "views/Components/GridSystem.js";
@@ -171,21 +179,21 @@ var routes = [
         layout: "/admin",
         name: "Create main exam name",
         mini: "EN",
-        component: Dashboard
+        component: ExamNameCreate
       },
       {
         path: "/create_exam",
         layout: "/admin",
         name: "Create exam",
         mini: "CE",
-        component: Dashboard
+        component: ExamCreate
       },
       {
         path: "/gen_seat_numbers",
         layout: "/admin",
         name: "Generate seat numbers",
         mini: "SN",
-        component: Dashboard
+        component: ExamSeatGeneration
       },
     ]
   },
@@ -201,28 +209,28 @@ var routes = [
         layout: "/admin",
         name: "Enter exam results",
         mini: "ER",
-        component: Dashboard
+        component: ResultEnter
       },
       {
         path: "/list_results",
         layout: "/admin",
         name: "List results",
         mini: "LR",
-        component: Dashboard
+        component: ResultList
       },
       {
         path: "/view_results",
         layout: "/admin",
         name: "View results",
         mini: "VR",
-        component: Dashboard
+        component: ResultView
       },
       {
         path: "/grade_structures",
         layout: "/admin",
         name: "Grade structures",
         mini: "GS",
-        component: Dashboard
+        component: ResultGradeStructure
       },
     ]
   },
@@ -270,7 +278,7 @@ var routes = [
     layout: "/admin",
     name: "Print Material",
     icon: "nc-icon nc-paper-2",
-    component: Dashboard
+    component: PrintMaterial
   },   
   // {
   //   collapse: true,

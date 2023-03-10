@@ -116,314 +116,316 @@ function Class() {
                     </Button>
                   </div>
                 </Modal>
-                {/* End Modal */}                
-                <Table>
-                  <thead>
-                    <tr>
-                      <th className="text-center">#</th>
-                      <th>Class Name</th>
-                      <th className="text-right">Class Type</th>
-                      <th className="text-center">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="text-center">1</td>
-                      <td>Class 1</td>
-                      <td className="text-right">Pending</td>
-                      <td className="td-actions text-center">
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-981231696">
-                              Edit class..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                {/* End Modal */}   
+                <Card.Body>            
+                  <Table>
+                    <thead>
+                      <tr>
+                        <th className="text-center">#</th>
+                        <th>Class Name</th>
+                        <th className="text-right">Class Type</th>
+                        <th className="text-center">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="text-center">1</td>
+                        <td>Class 1</td>
+                        <td className="text-right">Pending</td>
+                        <td className="td-actions text-center">
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="success"
+                            overlay={
+                              <Tooltip id="tooltip-981231696">
+                                Edit class..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-edit"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="success"
+                            >
+                              <i className="fas fa-edit"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="info"
+                            overlay={
+                              <Tooltip id="tooltip-48903503">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-book"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-255158527">Remove..</Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="info"
+                            >
+                              <i className="fas fa-book"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="danger"
+                            overlay={
+                              <Tooltip id="tooltip-255158527">Remove..</Tooltip>
+                            }
                           >
-                            <i className="fas fa-times"></i>
-                          </Button>
-                        </OverlayTrigger>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="text-center">2</td>
-                      <td>Class 2</td>
-                      <td className="text-right">Federal</td>
-                      <td className="td-actions text-center">
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-981231696">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="danger"
+                            >
+                              <i className="fas fa-times"></i>
+                            </Button>
+                          </OverlayTrigger>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="text-center">2</td>
+                        <td>Class 2</td>
+                        <td className="text-right">Federal</td>
+                        <td className="td-actions text-center">
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="success"
+                            overlay={
+                              <Tooltip id="tooltip-981231696">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-edit"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="success"
+                            >
+                              <i className="fas fa-edit"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="info"
+                            overlay={
+                              <Tooltip id="tooltip-48903503">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-book"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-255158527">Remove..</Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="info"
+                            >
+                              <i className="fas fa-book"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="danger"
+                            overlay={
+                              <Tooltip id="tooltip-255158527">Remove..</Tooltip>
+                            }
                           >
-                            <i className="fas fa-times"></i>
-                          </Button>
-                        </OverlayTrigger>
-                      </td>
-                    </tr>  
-                    <tr>
-                      <td className="text-center">3</td>
-                      <td>Class 3</td>
-                      <td className="text-right">Federal</td>
-                      <td className="td-actions text-center">
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-981231696">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="danger"
+                            >
+                              <i className="fas fa-times"></i>
+                            </Button>
+                          </OverlayTrigger>
+                        </td>
+                      </tr>  
+                      <tr>
+                        <td className="text-center">3</td>
+                        <td>Class 3</td>
+                        <td className="text-right">Federal</td>
+                        <td className="td-actions text-center">
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="success"
+                            overlay={
+                              <Tooltip id="tooltip-981231696">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-edit"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="success"
+                            >
+                              <i className="fas fa-edit"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="info"
+                            overlay={
+                              <Tooltip id="tooltip-48903503">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-book"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-255158527">Remove..</Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="info"
+                            >
+                              <i className="fas fa-book"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="danger"
+                            overlay={
+                              <Tooltip id="tooltip-255158527">Remove..</Tooltip>
+                            }
                           >
-                            <i className="fas fa-times"></i>
-                          </Button>
-                        </OverlayTrigger>
-                      </td>
-                    </tr>  
-                    <tr>
-                      <td className="text-center">4</td>
-                      <td>Class 4</td>
-                      <td className="text-right">Federal</td>
-                      <td className="td-actions text-center">
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-981231696">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="danger"
+                            >
+                              <i className="fas fa-times"></i>
+                            </Button>
+                          </OverlayTrigger>
+                        </td>
+                      </tr>  
+                      <tr>
+                        <td className="text-center">4</td>
+                        <td>Class 4</td>
+                        <td className="text-right">Federal</td>
+                        <td className="td-actions text-center">
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="success"
+                            overlay={
+                              <Tooltip id="tooltip-981231696">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-edit"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="success"
+                            >
+                              <i className="fas fa-edit"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="info"
+                            overlay={
+                              <Tooltip id="tooltip-48903503">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-book"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-255158527">Remove..</Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="info"
+                            >
+                              <i className="fas fa-book"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="danger"
+                            overlay={
+                              <Tooltip id="tooltip-255158527">Remove..</Tooltip>
+                            }
                           >
-                            <i className="fas fa-times"></i>
-                          </Button>
-                        </OverlayTrigger>
-                      </td>
-                    </tr>                                                                                               
-                    <tr>
-                      <td className="text-center">5</td>
-                      <td>Class 5</td>
-                      <td className="text-right">Federal</td>
-                      <td className="td-actions text-center">
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-981231696">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="danger"
+                            >
+                              <i className="fas fa-times"></i>
+                            </Button>
+                          </OverlayTrigger>
+                        </td>
+                      </tr>                                                                                               
+                      <tr>
+                        <td className="text-center">5</td>
+                        <td>Class 5</td>
+                        <td className="text-right">Federal</td>
+                        <td className="td-actions text-center">
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="success"
+                            overlay={
+                              <Tooltip id="tooltip-981231696">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-edit"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-48903503">
-                              Add books..
-                            </Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="success"
+                            >
+                              <i className="fas fa-edit"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="info"
+                            overlay={
+                              <Tooltip id="tooltip-48903503">
+                                Add books..
+                              </Tooltip>
+                            }
                           >
-                            <i className="fas fa-book"></i>
-                          </Button>
-                        </OverlayTrigger>
-                        <OverlayTrigger
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                          overlay={
-                            <Tooltip id="tooltip-255158527">Remove..</Tooltip>
-                          }
-                        >
-                          <Button
-                            className="btn-link btn-xs"
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="info"
+                            >
+                              <i className="fas fa-book"></i>
+                            </Button>
+                          </OverlayTrigger>
+                          <OverlayTrigger
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
-                            variant="danger"
+                            overlay={
+                              <Tooltip id="tooltip-255158527">Remove..</Tooltip>
+                            }
                           >
-                            <i className="fas fa-times"></i>
-                          </Button>
-                        </OverlayTrigger>
-                      </td>
-                    </tr>    
-                  </tbody>
-                </Table>
+                            <Button
+                              className="btn-link btn-xs"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                              variant="danger"
+                            >
+                              <i className="fas fa-times"></i>
+                            </Button>
+                          </OverlayTrigger>
+                        </td>
+                      </tr>    
+                    </tbody>
+                  </Table>
+                </Card.Body>
               </Card.Body>              
             </Card>
           </Col>
