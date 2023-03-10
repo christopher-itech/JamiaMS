@@ -34,7 +34,7 @@ function PrintMaterial() {
             <Card className="stacked-form">
               <Card.Header>
                 <Card.Title as="h4">Admission and registration form for new and old students</Card.Title>
-                <Card.Title as="h6" class="mt-3">Enrolment number : 2023575<br/>The year of joining : 2023</Card.Title>
+                <Card.Title as="h6" class="mt-3">Enrolment number : <br/>The year of joining : </Card.Title>
               </Card.Header>
               <Card.Body>
                 <Form action="" className="form" method="">
